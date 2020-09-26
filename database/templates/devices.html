@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Devices</h1>
+
+<table class="table table-striped table-bordered table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Device #</th>
+            <th scope="col">Host Name</th>
+            <th scope="col">IP Address</th>
+            <th scope="col">Device Type</th>
+            <th scope="col">Family</th>
+            <th scope="col">Model</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for device in all %}
+            <tr>
+                <th scope="row">#</th>
+                <td>{{ device.hostname }}</td>
+                <td>{{ device.IPAddress }}</td>
+                <td>{{ device.deviceType }}</td>
+                <td>{{ device.family }}</td>
+                <td>{{ device.model }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+    
+
+{% endblock %}

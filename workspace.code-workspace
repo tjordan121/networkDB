@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../djangostock/stocks"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "networkDB"
+	}
+}
